@@ -33,7 +33,7 @@
 
 /*class with the jump animation*/
 .jump {
-  animation: jump-mario 500ms ease-out;
+  animation: jump-mario 600ms ease-out;
 }
 
 
@@ -57,15 +57,15 @@
   }
   
   40% {
-    bottom: 170px;
+    bottom: 180px;
   }
 
   50% {
-    bottom: 170px;
+    bottom: 180px;
   }
 
   60% {
-  bottom: 170px;
+  bottom: 180px;
   }
 
   100% {
