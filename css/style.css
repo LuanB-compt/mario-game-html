@@ -7,12 +7,13 @@
 
 /* main screen game */
 .game {
-  width: 80%;
+  width: 100%;
   height: 500px;
-  border: 1px solid #333;
+  border-bottom: 15px solid rgb(35, 160, 35);
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
 /*pipe class*/
@@ -31,12 +32,16 @@
   bottom: 0;
 }
 
-
 /*class with the jump animation*/
 .jump {
   animation: jump-mario 600ms ease-out;
 }
 
+.clouds {
+  width: 450px;
+  position: absolute;
+  animation: clouds-animation 17s infinite linear;
+}
 
 
 
@@ -71,5 +76,15 @@
 
   100% {
   bottom: 0px;
+  }
+}
+
+@keyframes clouds-animation{
+  from{
+    right: -500px;
+  }
+  
+  to {
+    right: 100%;
   }
 }
