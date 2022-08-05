@@ -12,10 +12,63 @@
   border: 1px solid #333;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
+/*pipe class*/
 .pipe {
   position: absolute;
   bottom: 0;
   width: 80px;
+  animation: pipe-animation 2s infinite linear;
+}
+
+/*mario class*/
+.mario {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+
+/*class with the jump animation*/
+.jump {
+  animation: jump-mario 500ms ease-out;
+}
+
+
+
+
+/*pipe passing in thee main screen*/
+@keyframes pipe-animation {
+  from {
+    right: -80px;
+  }
+  
+  to {
+  right: 100%;
+  }
+}
+
+/*mario jump animation*/
+@keyframes jump-mario {
+  0% {
+    bottom: 0px;
+  }
+  
+  40% {
+    bottom: 170px;
+  }
+
+  50% {
+    bottom: 170px;
+  }
+
+  60% {
+  bottom: 170px;
+  }
+
+  100% {
+  bottom: 0px;
+  }
 }
